@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Sahal Harunani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  
+  <style>
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: #f4f8fb;
+      color: #333;
+    }
+
+    header {
+      background-color: #001F3F;
+      color: white;
+      padding: 1rem 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #004080;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      padding: 15px 20px;
+      display: block;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #005bb5;
+      
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 90%;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #004080;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background: #001F3F;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 60px;
+    }
+
+    a {
+      color: #aadfff;
+    }
+	.profile-img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sahal Harunani</h1>
+    <p>Competitive Swimmer | Athlete | Leader</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="personal-bests.html">Personal Bests</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Biography</h2>
+    <p>
+      Sahal Harunani is a competitive swimmer representing Tanzania. With over 200 medals and 13 trophies, Sahal has proven himself as one of the most decorated youth athletes in the country. He began his swimming journey at a very young age and quickly found his passion in the sport.
+    </p>
+    <p>
+      Sahal is currently a proud member of the Tanzanian National Swimming Team. His mission is to inspire young athletes across the continent by showing what dedication, discipline, and support can help achieve.
+    </p>
+    <p>
+      Off the pool, Sahal is also a student and leader, balancing academics and sports. He uses his platform to share insights about hard work, motivation, and perseverance.
+    </p><br>
+	<img class="profile-img" src="sahalswimimages\sahatz.jpeg" alt="Sahal Harunani" />
+  </section>
+  <footer>
+  <p>&copy; 2025 Sahal Harunani. All rights reserved. | Follow on Instagram:
+    <a href="https://www.instagram.com/sahal_harunani08/" target="_blank" style="color:#aadfff; text-decoration: underline;">sahal_harunani08</a>
+  </p>
+</footer>
+<script>
+    // Highlight the current page link
+    const links = document.querySelectorAll("nav ul li a");
+    const currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+</body>
+</html>
