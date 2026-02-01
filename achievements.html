@@ -80,6 +80,12 @@
     ul {
       padding-left: 20px;
     }
+	  .profile-image {
+  width: 100%;           /* Makes the image scale to container width */
+  height: auto;          /* Maintains aspect ratio */
+  display: block;        /* Removes small bottom spacing under image */
+  object-fit: cover;     /* Crops/adjusts image nicely inside container */
+}
 
     footer {
       background: #001F3F;
@@ -127,7 +133,7 @@
       <li>Consistently ranks among the top performers in national swimming meets</li>
     </ul>
 	  <br>
-	<img class="profile-img" src="sahalswimimages/swimsahal22.jpg" alt="Sahal Harunani" />
+	<img class="profile-img" src="sahalswimimages/swimsahal22.jpg" alt="Sahal Harunani"  class="profile-image"/>
   </section>
 
   <footer>
@@ -219,6 +225,7 @@
   </script>
 </body>
 </html>
+
 
 
 
